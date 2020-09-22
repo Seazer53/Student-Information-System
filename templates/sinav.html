@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<style>
+div.a {
+    text-align: center;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #428bca;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Sınav Sonuçları</title>
+
+</head>
+<body>
+<div class="navbar">
+  <a class="active" href="/">Çıkış</a>
+  <a href="/anasayfa/yardim"> Yardım</a>
+  <a href="/anasayfa/iletisim"> İletişim</a>
+  <a href="/anasayfa/hakkinda">Hakkında</a>
+</div>
+
+<div class="a">
+    <h3>Sınav sonuçlarınızı görüntülemek için öğrenci numaranızı giriniz.</h3>
+<label>Öğrenci No:</label><input type="text" id="ogrenciid">
+<button type="submit" id="button" onclick="">Gönder</button>
+
+
+</div>
+</body>
+</html>

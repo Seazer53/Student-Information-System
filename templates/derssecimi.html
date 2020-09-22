@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #428bca;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+table, th, td {
+  border: #86989B 3px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+    width: 90%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 32%;
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Ders Seçim Ekranı</title>
+</head>
+<body>
+<div class="navbar">
+  <a class="active" href="/">Çıkış</a>
+  <a href="/anasayfa/yardim"> Yardım</a>
+  <a href="/anasayfa/iletisim"> İletişim</a>
+  <a href="/anasayfa/hakkinda">Hakkında</a>
+</div>
+<table>
+    <caption><b>Ders Seçim Ekranı</b></caption>
+    <tr>
+        <th>Ders Kodu</th>
+        <th>Ders Adı</th>
+        <th>Seç</th>
+    </tr>
+    <tr>
+        <td>BGM1002</td>
+        <td>Matematik</td>
+        <td><input type="checkbox"></td>
+
+    </tr>
+    <tr>
+        <td>BGM1003</td>
+        <td>Fizik</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>BGM1004</td>
+        <td>Bilişimin Temelleri</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>BGM1005</td>
+        <td>Algoritma Ve Programlama</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>EEM1002</td>
+        <td>Matematik</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>EEM1003</td>
+        <td>Fizik</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>EEM1004</td>
+        <td>Olasılık Ve İstatistik</td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <td>EEM1005</td>
+        <td>Algoritma Ve Programlama</td>
+        <td><input type="checkbox"></td>
+    </tr>
+</table>
+<div class="wrapper">
+    <button class="button" onclick="message()">Gönder</button>
+    <br><br>
+    <p id="paragh"></p>
+    <script>
+        function message() {
+            document.getElementById("paragh").innerHTML="Değişikler Uygulandı!"
+        }
+    </script>
+
+</div>
+</body>
+</html>

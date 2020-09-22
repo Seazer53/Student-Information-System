@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <style>
+      div.container {
+        text-align: center;
+      }
+    </style>
+    <title>Öğrenci Bilgi Sistemi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hoşgeldiniz!</h2>
+      <br>
+      <fieldset>
+          <legend>Giriş Ekranı</legend>
+          <form action="" method="post">
+          Öğrenci No:<br><input type="text" placeholder="" name="username" value="{{
+            request.form.username }}">
+            <br>
+          Şifreniz:<br><input type="password" placeholder="" name="password" value="{{
+            request.form.password }}">
+            <br>
+          <p><a href="/giris">Giriş yaparken sorun mu yaşıyorsunuz?</a></p>
+            <br>
+          <input class="btn btn-default" type="submit" value="Giriş Yap">
+        </form>
+      </fieldset>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>

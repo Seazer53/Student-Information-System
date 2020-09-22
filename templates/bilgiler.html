@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Öğrenci Bilgi Sistemi</title>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #428bca;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #428bca;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+h3,p {
+    text-align: center;
+}
+
+a1:link {
+  color: #428bca;
+  background-color: transparent;
+  text-decoration: none;
+}
+a1:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a1:hover {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a1:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+iframe {
+    float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a class="active" href="/">Çıkış</a>
+  <a href="/anasayfa/yardim"> Yardım</a>
+  <a href="/anasayfa/iletisim"> İletişim</a>
+  <a href="/anasayfa/hakkinda">Hakkında</a>
+</div>
+
+<a id="a1" href="https://www.ayvansaray.edu.tr/" target="inframe" style="text-align: center">Ayvansaray.edu.tr'ye gitmek için tıklayın</a>
+<iframe src="ayvansaray.html" height="900" width="1430" name="inframe" ></iframe>
+
+<ul>
+  <li><a class="active" href="/anasayfa/sinavsonuclari">Sınav Sonuçları</a></li>
+  <li><a href="/anasayfa/derssecimi">Ders Seçimi</a></li>
+</ul>
+
+</body>
+</html>
